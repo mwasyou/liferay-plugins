@@ -1,0 +1,159 @@
+@import "compass";
+
+/* -------- Global -------- */
+
+#breadcrumbs, #heading .page-title, #navigation .child-menu, #navigation h1, #skip-to-content {
+	clip: rect(0 0 0 0);
+	position: absolute;
+}
+
+body {
+	background-color: #FFF;
+	font-family: arial, verdana, georgia;
+	font-size: 12px;
+}
+
+#wrapper {
+	margin: 7px auto 0;
+	padding: 0 40px;
+	width: 960px;
+}
+
+#banner {
+	color: #999;
+	position: relative;
+
+	#heading {
+		position: relative;
+	}
+
+	.header-top-text {
+		border-bottom: 1px dotted #CCC;
+		color: #999;
+		font-size: 18px;
+		padding: 5px 0;
+		text-align: center;
+	}
+
+	.header-text-cont {
+		border-left: 1px solid #DDD;
+		color: #999;
+		float: right;
+		margin: 10px 0;
+		padding: 0 25px 0 15px;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 275px;
+
+		&:after {
+			content: " ";
+
+		}
+	}
+
+	.site-title {
+		padding: 15px 0;
+		margin: 0;
+	}
+}
+
+#navigation {
+	padding: 5px 0;
+	width: 640px;
+
+	ul {
+		display: inline-block;
+		list-style: none;
+		margin: 0;
+
+		li {
+			display: block;
+			float: left;
+
+			a {
+				color: #999;
+				padding: 5px 15px;
+				color: #999;
+				text-decoration: none;
+				text-transform: uppercase;
+
+				&:hover {
+					background-color: #333;
+				}
+			}
+
+			&.selected {
+				a {
+					background-color: #333;
+				}
+			}
+		}
+	}
+}
+
+#pageSearch {
+	border: 1px solid #EEE;
+	bottom: 0;
+	display: block;
+	position: absolute;
+	right: 0;
+
+	#keywords {
+		background: #FFF;
+		border-width: 0;
+		height: 28px;
+		padding: 0;
+		width: 284px;
+	}
+
+	.lfr-search-keywords, .lfr-search-button {
+		.aui-field-content {
+			margin-right: 0;
+		}
+	}
+
+	#search {
+		padding: 8px;
+	}
+}
+
+#main-content {
+	padding: 10px 0;
+}
+
+#footer {
+	.powered-by {
+		color: #838383;
+		font-size: 11px;
+		margin-top: 15px;
+		margin-bottom: 10px;
+		padding: 5px 40px 0 0;
+		text-align: right;
+	}
+}
+
+#content #main-content {
+	color: #C7C7C7;
+
+	a {
+		color: #A1A1A1;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+/* -------- Web Content -------- */
+
+h1 {
+	font-size: 15px;
+}
+
+.single-content {
+	p {
+		color: #888;
+	}
+}

@@ -1,0 +1,46 @@
+{
+	"layouts": [
+		{
+			"columns": [
+				[
+					"Main Carousel.xml"
+				]
+			],
+			"friendlyURL": "/home",
+			"name": "Welcome",
+			"title": "Welcome"
+		},
+		{
+			"layoutTemplateId": "2_columns_iii",
+			"columns": [
+				[
+					"About.html"
+				]
+			],
+			"friendlyURL": "/about",
+			"name": "About",
+			"title": "About"
+		},
+		{
+			"friendlyURL": "/portfolio",
+			"name": "Portfolio",
+			"title": "Portfolio"
+		},
+		{
+			"friendlyURL": "/blog",
+			"name": "Blog",
+			"title": "Blog"
+		},
+		{
+			"friendlyURL": "/resume",
+			"name": "Resume",
+			"title": "Resume"
+		},
+		{
+			"friendlyURL": "/contact",
+			"name": "Contact",
+			"title": "Contact"
+		},
+	],
+	"layoutTemplateId": "1_column"
+}

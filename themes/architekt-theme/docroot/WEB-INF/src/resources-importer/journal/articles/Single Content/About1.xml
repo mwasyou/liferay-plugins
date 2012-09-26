@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root available-locales="en_US" default-locale="en_US">
+	<dynamic-element instance-id="qd9QSqBY" name="title" type="text" index-type="">
+		<dynamic-content><![CDATA[About]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="YX1NmQTB" name="main-image" type="document_library" index-type="">
+		<dynamic-content><![CDATA[[$FILE=about.jpg$]]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="jKn9jTXW" name="content" type="text_area" index-type="">
+		<dynamic-content><![CDATA[<p>
+	Write Something about yourself…</p>
+<p>
+	Various components of a book into a coherent whole. Front matter, or preliminaries, is the first section of a book, and is usually the smallest section in terms of the number of pages. Incorporating the content,style,format,design, and sequence of the various components of a book into a coherent whole. Front matter, or preliminaries, is the first section of a book, and is usually the smallest section in terms of the number of pages.</p>
+<p>
+	Private collectors, corporations, publicly funded arts organizations, contemporary art museums or by artists. Contemporary art is exhibited by commercial contemporary art galleries, private collectors, corporations, publicly funded arts organizations, contemporary art museums or by artists.</p>
+]]></dynamic-content>
+	</dynamic-element>
+</root>

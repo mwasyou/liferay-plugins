@@ -1,0 +1,27 @@
+## ---------- Logo ---------- ##
+
+#if (($company.getLogoId() == 0) && $use_company_logo)
+	#set ($site_logo = "${images_folder}/custom/logo.png")
+	#set ($site_logo_height = 69)
+	#set ($site_logo_width = 403)
+#end
+
+## ---------- Header Content ---------- ##
+
+#if ($theme_settings.header-text-article-id)
+	#set ($header_text = $journalContentUtil.getContent($group_id, $theme_settings.header-text-article-id, null, "$locale", $theme_display))
+#else
+	#set ($header_text = $journalContentUtil.getContent($group_id, "HEADER-TEXT", null, "$locale", $theme_display))
+#end
+
+#if ($theme_settings.header-text-cont-article-id)
+	#set ($header_text_cont = $journalContentUtil.getContent($group_id, $theme_settings.header-text-cont-article-id, null, "$locale", $theme_display))
+#else
+	#set ($header_text_cont = $journalContentUtil.getContent($group_id, "HEADER-TEXT-CONT", null, "$locale", $theme_display))
+#end
+
+#if($theme_settings.display-search == true)
+	#set ($css_class = $css_class + " show-search")
+#else
+	#set ($css_class = $css_class + " hide-search")
+#end
