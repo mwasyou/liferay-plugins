@@ -77,14 +77,7 @@ $theme.include($body_top_include)
 		#end
 	</div>
 
-	<footer id="footer" role="contentinfo">
-		<p class="powered-by">
-				#if (!$is_signed_in)
-					<a href="$sign_in_url" id="sign-in" rel="nofollow">$sign_in_text</a>
-				#end
-				Design by <a href="//dessign.net">Dessign.net</a>
-		</p>
-	</footer>
+	#parse ("$full_templates_path/footer.vm")
 </div>
 
 $theme.include($body_bottom_include)

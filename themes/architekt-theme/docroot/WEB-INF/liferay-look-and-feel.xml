@@ -11,6 +11,11 @@
 			<setting configurable="true" key="display-search"  type="checkbox" value="true" />
 			<setting configurable="true" key="header-text-article-id"  type="text"/>
 			<setting configurable="true" key="header-text-cont-article-id"  type="text"/>
+			<setting configurable="true" key="footer-section-artical-id-1"  type="text"/>
+			<setting configurable="true" key="footer-section-artical-id-2"  type="text"/>
+			<setting configurable="true" key="footer-section-artical-id-3"  type="text"/>
+			<setting configurable="true" key="footer-section-artical-id-4"  type="text"/>
+			<setting configurable="true" key="portlet-setup-show-borders"  type="checkbox" value="false"/>
 		</settings>
 	</theme>
 </look-and-feel>
