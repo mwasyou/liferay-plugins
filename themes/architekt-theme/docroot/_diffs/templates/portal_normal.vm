@@ -55,6 +55,14 @@ $theme.include($body_top_include)
 				$theme.journalContentSearch()
 			</div>
 		#end
+
+		#if($theme_settings.display-languagebar == true)
+			$velocityPortletPreferences.setValue("languageIds", "en_US,pt_PT,fr_FR,es_ES")
+    		$velocityPortletPreferences.setValue("display-style", "0")
+    		$velocityPortletPreferences.setValue("portlet-setup-show-borders", "false")
+    		$theme.runtime("82", "", $velocityPortletPreferences.toString())
+    		$velocityPortletPreferences.reset()
+		#end
 	</header>
 
 	<div id="content">
