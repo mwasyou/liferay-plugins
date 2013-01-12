@@ -9,6 +9,9 @@
 		<settings>
 			<setting configurable="false" key="show-site-name-default"  type="checkbox" value="false" />
 			<setting configurable="true" key="display-search"  type="checkbox" value="true" />
+			<setting configurable="true" key="display-languagebar"  type="checkbox" value="true" />
+			<setting configurable="true" key="languages"  type="text" value="es_ES,en_US" />
+			<setting configurable="true" key="languages-display-style"  type="select" options="1,2,3,4" value="4"/>
 			<setting configurable="true" key="header-text-article-id"  type="text"/>
 			<setting configurable="true" key="header-text-cont-article-id"  type="text"/>
 			<setting configurable="true" key="footer-section-artical-id-1"  type="text"/>
