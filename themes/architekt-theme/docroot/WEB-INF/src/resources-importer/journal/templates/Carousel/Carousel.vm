@@ -60,7 +60,7 @@
 	.aui-carousel-menu-prev, .aui-carousel-menu-next {
 		background-position-y: 50%;
 		background-repeat: no-repeat;
-		height: $height.getData()px; 
+		height: $height.getData()px;
 		width: 50px;
 		position: absolute;
 		z-index: 20;
