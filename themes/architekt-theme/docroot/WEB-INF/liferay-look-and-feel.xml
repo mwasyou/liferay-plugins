@@ -9,16 +9,14 @@
 		<settings>
 			<setting configurable="false" key="show-site-name-default"  type="checkbox" value="false" />
 			<setting configurable="true" key="display-search"  type="checkbox" value="true" />
-			<setting configurable="true" key="display-languagebar"  type="checkbox" value="true" />
-			<setting configurable="true" key="languages"  type="text" value="es_ES,en_US" />
-			<setting configurable="true" key="languages-display-style"  type="select" options="1,2,3,4" value="4"/>
+			<setting configurable="true" key="display-languages"  type="checkbox" value="false" />
 			<setting configurable="true" key="header-text-article-id"  type="text"/>
 			<setting configurable="true" key="header-text-cont-article-id"  type="text"/>
-			<setting configurable="true" key="footer-section-artical-id-1"  type="text"/>
-			<setting configurable="true" key="footer-section-artical-id-2"  type="text"/>
-			<setting configurable="true" key="footer-section-artical-id-3"  type="text"/>
-			<setting configurable="true" key="footer-section-artical-id-4"  type="text"/>
-			<setting configurable="true" key="portlet-setup-show-borders"  type="checkbox" value="false"/>
+			<setting configurable="true" key="footer-section-1-article-id"  type="text"/>
+			<setting configurable="true" key="footer-section-2-article-id"  type="text"/>
+			<setting configurable="true" key="footer-section-3-article-id"  type="text"/>
+			<setting configurable="true" key="footer-section-4-article-id"  type="text"/>
+			<setting configurable="true" key="portlet-setup-show-borders-default"  type="checkbox" value="false"/>
 		</settings>
 	</theme>
 </look-and-feel>

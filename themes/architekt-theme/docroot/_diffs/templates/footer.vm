@@ -24,6 +24,9 @@
 	</div>
 	<footer id="footer" role="contentinfo">
 		<p class="powered-by">
-		#if (!$is_signed_in) <a href="$sign_in_url" id="sign-in" rel="nofollow">$sign_in_text</a> #end <a href="http://www.liferay.com/marketplace/-/mp/category/15828894">ARCHITEKT Theme</a> Designed by <a href="http://dessign.net">Dessign.net</a>
+		#if (!$is_signed_in)
+			<a href="$sign_in_url" id="sign-in" rel="nofollow">$sign_in_text</a>
+		#end
+		<a href="http://www.liferay.com/marketplace/-/mp/category/15828894">ARCHITEKT Theme</a> Designed by <a href="http://dessign.net">Dessign.net</a>
 	</p>
 </footer>

@@ -27,6 +27,11 @@ body {
 		position: relative;
 	}
 
+	.language {
+		border-bottom: 1px dotted #CCC;
+		padding: 0 0 10px;
+	}
+
 	.header-top-text {
 		border-bottom: 1px dotted #CCC;
 		color: #999;
@@ -131,6 +136,10 @@ body {
 		margin-bottom: 10px;
 		padding: 5px 0;
 		text-align: right;
+
+		#sign-in {
+			display: block;
+		}
 
 		a {
 			color: #333;
