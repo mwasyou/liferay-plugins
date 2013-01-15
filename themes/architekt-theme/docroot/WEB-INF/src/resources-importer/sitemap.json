@@ -3,7 +3,8 @@
 		{
 			"columns": [
 				[
-					"Main Carousel.xml"
+					"Main Carousel.xml",
+					"Home Content.html"
 				]
 			],
 			"friendlyURL": "/home",
@@ -15,6 +16,9 @@
 			"columns": [
 				[
 					"About.html"
+				],
+				[
+					"About Sidebar.html"
 				]
 			],
 			"friendlyURL": "/about",

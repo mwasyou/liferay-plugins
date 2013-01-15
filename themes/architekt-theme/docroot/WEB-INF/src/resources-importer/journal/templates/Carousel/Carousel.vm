@@ -18,7 +18,7 @@
 	}
 
 	#$contentClass .carousel-item {
-		height: $adjustedHeightpx;
+		height: ${adjustedHeight}px;
 		overflow: hidden;
 		width: $width.getData()px;
 		position: absolute;
@@ -37,11 +37,10 @@
 	}
 
 	.aui-carousel menu {
-		height: $adjustedHeightpx;
 		padding: 0;
 		top: 0;
 		left: 0;
-		width: $width.getData()px;
+		width: ${width.getData}()px;
 	}
 
 	.aui-carousel-menu-prev {
@@ -86,7 +85,7 @@
 		var component = new A.Carousel(
 			{
 				contentBox: '#$contentClass',
-				height: $height.getData(),
+				height: ${adjustedHeight},
 				intervalTime: $duration.getData(),
 				width: $width.getData()
 			}
