@@ -41,7 +41,7 @@
 #if ($theme_settings.footer-section-2-article-id)
 	#set ($footer_section_2 = $journalContentUtil.getContent($group_id, $theme_settings.footer-section-2-article-id, null, "$locale", $theme_display))
 #else
-	#set ($footer_section_2 = $journalContentUtil.getContent($group_id, "BLOG", null, "$locale", $theme_display))
+	#set ($footer_section_2 = $journalContentUtil.getContent($group_id, "BLOG-FOOTER", null, "$locale", $theme_display))
 #end
 
 #if ($theme_settings.footer-section-3-article-id)

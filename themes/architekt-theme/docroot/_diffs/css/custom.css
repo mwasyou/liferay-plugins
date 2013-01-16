@@ -7,107 +7,158 @@
 	position: absolute;
 }
 
+* {
+	margin: 0;
+	padding: 0;
+}
+
 body {
 	background-color: #FFF;
+	color: #C7C7C7;
 	font-family: arial, verdana, georgia;
 	font-size: 12px;
 }
 
-#wrapper {
+#outside_container {
+	background-color: #FFF;
+	border-top: 7px solid #FFF;
 	margin: 0 auto;
-	background-color: #fff;
-	border-top: 7px solid #FFFFFF;
 	width: 1039px;
 }
 
 #main_container {
-	margin: 0 auto;
 	width: 959px;
+	margin: 0 auto;
 }
 
-#banner {
+h1,h2,h3,h4,h5,p {
+	margin: 10px 0;
+}
+
+h1 {
+	font-size: 15px;
+}
+
+a {
+	color: #A1A1A1;
+	text-decoration: none;
+	&:hover {
+		text-decoration:underline;
+	}
+}
+
+.clear {
+	clear: both;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+img {
+	border: none;
+}
+
+/* -------- Header -------- */
+
+.header_top_text {
+	border-bottom: 1px dotted #CCC;
 	color: #999;
-	position: relative;
-
-	#heading {
-		position: relative;
-	}
-
-	.language {
-		border-bottom: 1px dotted #CCC;
-		padding: 0 0 10px;
-	}
-
-	.header-top-text {
-		border-bottom: 1px dotted #CCC;
-		color: #999;
-		font-size: 18px;
-		padding: 5px 0;
-		text-align: center;
-	}
-
-	.header-text-cont {
-		border-left: 1px solid #DDD;
-		color: #999;
-		float: right;
-		margin: 10px 0;
-		padding: 0 25px 0 15px;
-		position: absolute;
-		right: 0;
-		top: 0;
-		width: 275px;
-
-		&:after {
-			content: " ";
-
-		}
-	}
-
-	.site-title {
-		padding: 15px 0;
-		margin: 0;
-	}
+	font-size: 20px;
+	padding: 5px 0;
+	text-align: center;
 }
 
-#navigation {
+.header_text_cont {
+	border-left: 1px solid #DDD;
+	float: right;
+	margin: 10px 0;
+	padding: 0 25px 0 15px;
+	width: 275px;
+}
+
+.logo {
+	float: left;
+	margin-top: 15px;
+}
+
+
+.language {
+	border-bottom: 1px dotted #CCC;
+	padding: 0 0 10px;
+	text-align: center;
+}
+
+#menu_container {
+	border-bottom: 1px solid #FFF;
 	padding: 5px 0;
-	width: 640px;
 
 	ul {
-		display: inline-block;
-		list-style: none;
+		list-style-type: none;
 		margin: 0;
 
 		li {
-			display: block;
 			float: left;
+			font-size: 12px;
+			margin: 5px 0;
+			position: relative;
+
+			&.has-children:hover .sub-menu {
+				display: block;
+			}
 
 			a {
+				display: block;
 				color: #999;
 				padding: 5px 15px;
-				color: #999;
 				text-decoration: none;
 				text-transform: uppercase;
 
 				&:hover {
 					background-color: #333;
+					color: #999;
 				}
 			}
 
-			&.selected {
-				a {
-					background-color: #333;
+			ul {
+				border: 1px solid #ddd;
+				display: none;
+				left: 0;
+				position: absolute;
+				top: 25px;
+				z-index: 150;
+
+				li {
+					float: none;
+					margin: 0;
+					width: 150px;
+
+					a {
+						background-color: #FFF;
+					}
 				}
 			}
 		}
 	}
+
+	.current-menu-item > a {
+		background-color: #333;
+		color: #999;
+	}
 }
 
-#pageSearch {
+
+.header_search {
+	float: right;
+	position: relative;
 	border: 1px solid #EEE;
 	bottom: 0;
 	display: block;
-	position: absolute;
+	position: relative;
 	right: 0;
 
 	#keywords {
@@ -115,7 +166,7 @@ body {
 		border-width: 0;
 		height: 28px;
 		padding: 0 5px;
-		width: 284px;
+		width: 273px;
 	}
 
 	.lfr-search-keywords, .lfr-search-button {
@@ -222,6 +273,15 @@ h1 {
 	font-size: 15px;
 }
 
+#single_container {
+	padding: 20px 0;
+}
+
+#single_left {
+	float: left;
+	width: 628px;
+}
+
 .single-content {
 	p {
 		color: #888;
@@ -230,6 +290,16 @@ h1 {
 
 #single_left p {
 	color: #888;
+}
+
+#sidebar {
+	float: right;
+	margin-top: 37px;
+	width: 306px;
+}
+
+.side_box {
+	margin-bottom: 25px;
 }
 
 .blog_box {
@@ -328,8 +398,45 @@ h1 {
 	margin-right: 0;
 }
 
-#sidebar {
-	float: right;
-	margin-top: 37px;
-	width: 306px;
+/* -------- Alignment -------- */
+
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter, div.aligncenter {
+	display: block;
+	margin: 5px auto 5px auto;
+}
+
+.alignright {
+	float:right;
+	margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+	float: left;
+	margin: 5px 20px 20px 0;
+}
+
+a img {
+	&.alignright {
+		float: right;
+		margin: 5px 0 20px 20px;
+	}
+
+	&.alignnone {
+    	margin: 5px 20px 20px 0;
+	}
+
+	&.alignleft {
+    	float: left;
+    	margin: 5px 20px 20px 0;
+	}
+
+	&.aligncenter {
+    	display: block;
+    	margin-left: auto;
+    	margin-right: auto
+	}
 }

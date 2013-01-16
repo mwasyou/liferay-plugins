@@ -7,16 +7,17 @@
 	</compatibility>
 	<theme id="architekt" name="Architekt Theme">
 		<settings>
-			<setting configurable="false" key="show-site-name-default"  type="checkbox" value="false" />
 			<setting configurable="true" key="display-search"  type="checkbox" value="true" />
 			<setting configurable="true" key="display-languages"  type="checkbox" value="false" />
+			<setting configurable="true" key="portlet-setup-show-borders-default"  type="checkbox" value="false"/>
 			<setting configurable="true" key="header-text-article-id"  type="text"/>
 			<setting configurable="true" key="header-text-cont-article-id"  type="text"/>
 			<setting configurable="true" key="footer-section-1-article-id"  type="text"/>
 			<setting configurable="true" key="footer-section-2-article-id"  type="text"/>
 			<setting configurable="true" key="footer-section-3-article-id"  type="text"/>
 			<setting configurable="true" key="footer-section-4-article-id"  type="text"/>
-			<setting configurable="true" key="portlet-setup-show-borders-default"  type="checkbox" value="false"/>
+			<setting configurable="false" key="show-site-name-default" value="false" />
+			<setting configurable="false" key="show-site-name-supported" value="false" />
 		</settings>
 	</theme>
 </look-and-feel>

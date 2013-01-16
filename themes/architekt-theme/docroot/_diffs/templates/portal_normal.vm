@@ -18,71 +18,40 @@ $theme.include($body_top_include)
 	#dockbar()
 #end
 
-<div id="wrapper">
+<div id="outside_container">
 	<div id="main_container">
-		<a href="#main-content" id="skip-to-content">#language("skip-to-content")</a>
-
-		<header id="banner" role="banner">
+		<div id="header">
 			#if($theme_settings.display-languages == true)
 				<div class="language">$theme.language()</div>
 			#end
-			<div class="header-top-text">
+
+			<div class="header_top_text">
 				$header_text
 			</div>
-			<div id="heading">
-				<h1 class="site-title">
-					<a class="$logo_css_class" href="$site_default_url" title="#language("go-to") $site_name">
-						<img alt="$logo_description" height="$site_logo_height" src="$site_logo" width="$site_logo_width" />
-					</a>
-
-					#if ($show_site_name)
-						<span class="site-name" title="#language("go-to") $site_name">
-							$site_name
-						</span>
-					#end
-				</h1>
-
-				<h2 class="page-title">
-					<span>$the_title</span>
-				</h2>
-				<div class="header-text-cont">
-					$header_text_cont
-				</div>
+			<a href="$site_default_url" title="#language("go-to") $site_name"><img alt="$logo_description" height="$site_logo_height" src="$site_logo" class="logo" width="$site_logo_width"></a>
+			<div class="header_text_cont">
+				$header_text_cont
 			</div>
+			<div class="clear"></div>
+      </div>
 
-			#if ($has_navigation || $is_signed_in)
-				#parse ("$full_templates_path/navigation.vm")
-			#end
+		#if ($has_navigation || $is_signed_in)
+			#parse ("$full_templates_path/navigation.vm")
+		#end
 
-			#if($theme_settings.display-search == true)
-				<div id="pageSearch">
-					$theme.journalContentSearch()
-				</div>
-			#end
+	<div id="content">
+		#if ($selectable)
+			$theme.include($content_include)
+		#else
+			$portletDisplay.recycle()
 
-		</header>
+			$portletDisplay.setTitle($the_title)
 
-		<div id="content">
-			<nav class="site-breadcrumbs" id="breadcrumbs">
-				<h1>
-					<span>#language("breadcrumbs")</span>
-				</h1>
+			$theme.wrapPortlet("portlet.vm", $content_include)
+		#end
+	</div>
 
-				#breadcrumbs()
-			</nav>
-
-			#if ($selectable)
-				$theme.include($content_include)
-			#else
-				$portletDisplay.recycle()
-
-				$portletDisplay.setTitle($the_title)
-
-				$theme.wrapPortlet("portlet.vm", $content_include)
-			#end
-		</div>
-
-		#parse ("$full_templates_path/footer.vm")
+	#parse ("$full_templates_path/footer.vm")
 	</div>
 </div>
 
