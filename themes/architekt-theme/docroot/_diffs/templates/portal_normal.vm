@@ -18,6 +18,11 @@ $theme.include($body_top_include)
 	#dockbar()
 #end
 
+#if (!$hasWebFormPortlet && $theme_settings.display-warning-messages == true)
+	<div class="portlet-msg-info">
+		This theme uses "Web Form Portlet", please click <a href="http://www.liferay.com/marketplace/-/mp/application/15195519">here</a> to download from Liferay Marketplace.
+ 	</div>
+#end
 <div id="outside_container">
 	<div id="main_container">
 		<div id="header">

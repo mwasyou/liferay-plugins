@@ -55,3 +55,14 @@
 #else
 	#set ($footer_section_4 = $journalContentUtil.getContent($group_id, "CONTACT", null, "$locale", $theme_display))
 #end
+
+## ---------- Check for Web Form Portlet ---------- ##
+
+#set ($portletLocalServiceUtil = $portal.getClass().forName("com.liferay.portal.service.PortletLocalServiceUtil"))
+
+#set ($webformPortletId = "1_WAR_webformportlet")
+
+#if ($portletLocalServiceUtil.hasPortlet($company_id, $webformPortletId) == true)
+	#set ($hasWebFormPortlet = true)
+#end
+
