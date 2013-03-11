@@ -11,7 +11,7 @@
 #if ($theme_settings.header-text-article-id)
 	#set ($header_text = $journalContentUtil.getContent($group_id, $theme_settings.header-text-article-id, null, "$locale", $theme_display))
 #else
-	#set ($header_text = $journalContentUtil.getContent($group_id, "HEADER-TEXT", null, "$locale", $theme_display))
+	#set ($header_text = $journalContentUtil.getContent($group_id, "HEADER-TEXT", null, $locale, $theme_display))
 #end
 
 #if ($theme_settings.header-text-cont-article-id)

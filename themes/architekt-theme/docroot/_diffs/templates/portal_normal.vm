@@ -29,14 +29,18 @@ $theme.include($body_top_include)
 			#if($theme_settings.display-languages == true)
 				<div class="language">$theme.language()</div>
 			#end
-
-			<div class="header_top_text">
-				$header_text
-			</div>
+			#if ($header_text)
+				<div class="header_top_text">
+					$header_text
+				</div>
+			#end
 			<a href="$site_default_url" title="#language("go-to") $site_name"><img alt="$logo_description" height="$site_logo_height" src="$site_logo" class="logo" width="$site_logo_width"></a>
-			<div class="header_text_cont">
-				$header_text_cont
-			</div>
+
+			#if ($header_text_cont)
+				<div class="header_text_cont">
+					$header_text_cont
+				</div>
+			#end
 			<div class="clear"></div>
       </div>
 
